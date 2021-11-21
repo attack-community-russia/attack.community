@@ -112,7 +112,7 @@ a:hover {
 } 
 
 .hack h3:before {
-    content: "### "
+    content: ""
 } 
 
 .container {
