@@ -15,7 +15,7 @@ body {
     word-wrap: break-word
 } 
 
-h1, h2 {
+h1, h2, h3 {
     line-height: 1.3em
 } 
 
@@ -38,20 +38,49 @@ a:hover {
     color: #fff
 }
 
-.hack, .hack h1, .hack h2 {
+
+.hack ul,
+.hack li {
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hack li {
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hack li {
+  position: relative;
+  display: block;
+  padding-left: 20px;
+}
+
+.hack li:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hack ul > li:after {
+  content: "-";
+}
+
+.hack, .hack h1, .hack h2, .hack h3{
     font-size: 1rem;
     font-style: normal;
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif
 } 
 
-.hack h1, .hack h2, .hack li, .hack ul {
-    font-size:13px;
+.hack h1, .hack h2, .hack h3, {
+    font-size:12px;
     float: none;
     margin: 0;
     padding: 0
-} 
+}
 
-.hack h1, .hack ul {
+.hack h1 {
     margin-top: 20px;
     margin-bottom: 20px
 } 
@@ -73,20 +102,17 @@ a:hover {
     content: "## "
 } 
 
-.hack li {
+.hack h3 {
     position: relative;
-    display: block;
-    padding-left: 20px
+    margin-bottom: 1.75rem
 } 
 
-.hack li:after {
-    position: absolute;
-    top: 0;
-    left: 0
+.hack h3:before {
+    display: inline
 } 
 
-.hack ul > li:after {
-    content: "-"
+.hack h3:before {
+    content: "### "
 } 
 
 .container {
