@@ -14,7 +14,7 @@
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="300">
     <meta property="og:image:height" content="300">
-    <meta property="og:description" content="Мы распространяем знания для борьбы с угрозами компьютерной безопасности.">
+    <meta property="og:description" content="Распространяем знания для борьбы с угрозами кибербезопасности.">
   </head>
   <body class="hack">
     <div class="main container">
@@ -37,7 +37,6 @@
         <li><a href="https://t.me/attack_community_dc_2">Разрабатываем методологию перевода</a></li>
         <li><a href="https://t.me/attack_community_dc_3">Выясняем принадлежность "сложности" к свойствам названий тактик</a></li>
         <li><a href="https://t.me/attack_TA0001">Переводим название тактики TA0001: Initial Access</a></li>
-        <li><a href="https://t.me/attack_TA0002">Переводим название тактики TA0002: Execution</a></li>
         <li><a href="https://t.me/attack_TA0004">Переводим название тактики TA0004: Privilege Escalation</a></li>
         <li><a href="https://t.me/attack_TA0005">Переводим название тактики TA0005: Defense Evasion</a></li>
         <li><a href="https://t.me/attack_TA0009">Переводим название тактики TA0009: Collection</a></li>
@@ -49,7 +48,7 @@
       Для читателей вход свободный.
       <br><br>
       <h2>Проблема</h2>
-      Анализ публикаций за 2016-2021 годы <a href="https://t.me/attack_community/2744">показал</a> что встречается до 7 версий перевода названия каждой из 14 тактик ATT&CK, в среднем — 3.5.
+      Анализ <a href="https://docs.google.com/spreadsheets/d/1DbnTGUG9sPyaKOZsKim641-fdM-ehVWoKsEpsHBWBcc/edit#gid=0">публикаций</a> за 2016-2021 годы <a href="https://t.me/attack_community/2744">показал</a> что встречается до 7 версий перевода названия каждой из 14 тактик ATT&CK, в среднем — 3.5.
       Высокая степень вариативности значительно затрудняет возможность связывать между собой материалы по одной теме от разных авторов. По той же причине осложнен поиск материалов на русском языке. 
       <br><br>
       Фреймворк должен был стать унифицированным языком описания угроз, но вместо этого мы создали множество версий этого языка.
@@ -59,41 +58,27 @@
       <h2>Цель</h2>
       Совместно разработать единый, обоснованный перевод названий 14 тактик фреймворка ATT&CK. Опубликовать перевод на сайте сообщества и в блоге сообщества на Хабр.
       <br><br>
-      <h2>Хронология</h2>
+      <h2>Хронология<a id="хронология" class="anchor" href="#хронология"></a></h2>
       <table>
         <tr>
           <th style="text-align:center">Дата</th>
           <th style="text-align:center">События</th>
         </tr>
         <tr>
-          <td rowspan="2">07.10.2021</td>
-          <td><a href="https://t.me/alexdorofeev">Александр Дорофеев</a> <a href="https://t.me/phd_soc/27228">предложил</a> свою версию перевода в группе <a href="https://t.me/phd_soc">SOС Технологии</a></td>
+          <td>07.10.2021</td>
+          <td><a href="https://t.me/alexdorofeev">Александр Дорофеев</a> <a href="https://t.me/phd_soc/27228">предложил</a> свою версию перевода в группе <a href="https://t.me/phd_soc">SOС Технологии</a>. Его сообщение <a href="https://t.me/attack_community/2537">переслали</a> в группу сообщества. Началось обсуждение версий перевода</td>
         </tr>
         <tr>
-          <td>Его сообщение <a href="https://t.me/attack_community/2537">переслали</a> в группу сообщества. Началось обсуждение версий перевода</td>
+          <td>12.10.2021</td>
+          <td>Опубликованы <a href="https://t.me/attack_community/2744">результаты анализа публикаций за последние 5 лет</a>, выявлена текущая проблема. Предложено <a href="https://t.me/attack_community/2744">разработать единый перевод</a> названий тактик. Началась дискуссия о <a href="dc_3.html">принадлежности "сложности" к свойствам названий тактик</a></td>
         </tr>
         <tr>
-          <td rowspan="3">12.10.2021</td>
-          <td>Опубликованы <a href="https://t.me/attack_community/2744">результаты анализа публикаций за последние 5 лет</a>, выявлена проблема</td>
-        </tr>
-        <tr>
-          <td>Предложено <a href="https://t.me/attack_community/2744">разработать единый перевод</a> названий тактик</td>
-        </tr>
-        <tr>
-          <td>Началась дискуссия о <a href="dc_3.html">принадлежности "сложности" к свойствам названий тактик</a></td>
-        </tr>
-        <tr>
-          <td rowspan="2">29.10.2021</td>
-          <td>Опубликованы <a href="https://t.me/attack_community/3144">предварительные принципы перевода</a></td>
-        </tr>
-        <tr>
-          <td>Началась <a href="https://t.me/attack_community/3140">работа над переводом 10 тактик</a>. 4 тактики заблокированы обсуждением</td>
+          <td>29.10.2021</td>
+          <td>Опубликованы <a href="https://t.me/attack_community/3144">предварительные принципы перевода</a>. Началась <a href="https://t.me/attack_community/3140">работа над переводом 10 тактик</a>. 4 тактики заблокированы обсуждением</td>
         </tr>
         <tr>
           <td>22.11.2021</td>
           <td>Завершен <a href="https://t.me/attack_TA0006/118">первый этап перевода названия тактики TA0006: Credential Access</a></td>
-        </tr>
-        <tr>
         </tr>
         <tr>
           <td>24.11.2021</td>
@@ -143,6 +128,7 @@
         <li><a href="https://t.me/spacepatcher">Александр Большаков</a></li>
         <li><a href="https://ru.linkedin.com/in/ruivanov">Руслан Иванов</a></li>
         <li><a href="https://t.me/iddqdidkfa">Константин Грищенко</a></li>
+        <li><a href="https://t.me/mad3e7cat">Александр Черненьков</a></li>
       </ul>
       <br>
       <h2>Архив</h2>
